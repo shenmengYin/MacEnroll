@@ -8,7 +8,7 @@ with requests.Session() as c:
     PTLANGCD = 'ENG'
     PTINSTALLEDLANG = 'ENG'
     USERID = 'yins1'
-    PWD = 'Ysm19970325'
+    PWD = ''
     c.get(url)
     login_data = dict(timezoneoffset = TIMEZONEOFFSET, ptmode = PTMODE, ptlangcd = PTLANGCD, ptinstalledlang = PTINSTALLEDLANG, userid = USERID, pwd = PWD)
     c.post(url, data = login_data, headers = {})
